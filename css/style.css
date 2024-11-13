@@ -1,0 +1,105 @@
+/* #region main styles */
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: 'Corporate-A-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Corporate-A-Bold.woff2') format('woff2'),
+        url('../fonts/Corporate-A-Bold.woff') format('woff');
+}
+body {
+    background-color: #070a1b;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Roboto Condensed";
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* #endregion */
+
+/* #region header */
+.header {
+
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.list {
+    display: flex;
+}
+.list__item + .list__item {
+    margin-left: 30px;
+}
+.list__link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .3s;
+}
+.list__link:hover {
+    background-color: #c1a1d2;
+}
+.header__content {
+    position: relative;
+    min-height: calc(100vh - 100px);
+    background-image: url('../images/main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.title {
+    font-family: 'Corporate-A-Bold';
+    font-size: 72px;
+    line-height: 120%;
+    margin-bottom: 5px;
+}
+.title-descr {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.header__content::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/decor.svg');
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 25px)
+}
+
+/* #endregion */
