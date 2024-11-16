@@ -167,6 +167,42 @@ ul {
 
 /* #endregion */
 
+/* #region video */
+
+.video {
+    margin-bottom: 150px;
+}
+.video__img {
+    margin-bottom: 25px;
+}
+.video__btn {
+    font-family: Corporate-A-Block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 120%;
+    color: #f402a2;
+    text-transform: uppercase;
+    padding: 14px;
+    border: 1px solid #f402a2;
+    transition: all 3s;
+}
+.video__btn:hover {
+    color: #53a1cb;
+    border-color: #53a1cb;
+}
+.video__btn path {
+    transition: all 3s;
+}
+.video__btn:hover path {
+    fill: #53a1cb;
+}
+
+/* #endregion */
+
 /* #region footer */
 .footer__inner {
     display: flex;
