@@ -371,6 +371,9 @@ ul {
   .list__item {
     margin: 0;
   }
+  .footer li img {
+    width: 100px;
+  }
   
 }
 @media (max-width: 502px){
